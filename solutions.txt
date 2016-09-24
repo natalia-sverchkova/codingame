@@ -1,0 +1,39 @@
+while 1:
+    max = 0
+    imax = 0
+    for i in xrange(8):
+        mountain_h = int(raw_input()) # represents the height of one mountain, from 9 to 0. Mountain heights are provided from left to right.
+        if mountain_h > max:
+            max = mountain_h
+            imax = i
+
+    print imax
+
+
+while True:
+    
+    print(max([(int(input()),x) for x in range(8)])[1])
+
+"max height in a list, which contains elements like that (height , mountain_id). 
+With max() you have the highest mountain. So [1] means that you just want the mountain_id. "
+
+while True:
+   
+   mountains = []
+ 
+   for i in xrange(8):
+
+        mountain_h = int(raw_input())  # represents the height of one mountain, from 9 to 0.
+
+        mountains.append(mountain_h)
+    
+
+   # Write an action using print
+    
+   # To debug: print >> sys.stderr, "Debug messages..."
+
+
+    
+   # The number of the mountain to fire on.
+
+   print mountains.index(max(mountains))
